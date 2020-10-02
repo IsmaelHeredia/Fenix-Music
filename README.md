@@ -22,31 +22,41 @@ To add new stations, you must import a JSON file with content like this:
 
 In addition, a file called stations.json is already included in the project as stations by default.
 
-Installation:
+**Installation:**
 
 Download the project from github either by normal download or by git clone.
 
 Once in the project, to generate the vendor folder use the following command:
 
+```
 composer install
+```
 
 To generate the node_modules folder use the following command:
 
+```
 npm install 
+```
 
 Rename the .env.example file to just .env and edit the MySQL server configuration values
 
 Now generate the key with the following command:
 
+```
 php artisan key:generate
+```
 
 To create the tables in the database use the following command:
 
+```
 php artisan migrate 
+```
 
 To generate the default admin user use the following command:
 
+```
 php artisan db:seed --class=DatabaseSeeder 
+```
 
 The password is also admin.
 
